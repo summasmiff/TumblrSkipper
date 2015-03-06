@@ -1,7 +1,8 @@
-var article_url = document.getElementById("continue_link");
+document.addEventListener('DOMContentLoaded', function () {
+	var links = document.getElementsByTagName("a");
+	for (var i = 0; i < links.length; i++) {
+		console.log(i);
+		// (function () {i.removeAttribute('data-tumblelog-popover')})();
+	}
+});
 
-function onWindowLoad(){
- article_url.click();
-}
-
-window.onload = onWindowLoad;

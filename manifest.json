@@ -1,13 +1,16 @@
-{	
+{
 	"manifest_version": 2,
-	"name": "Herald Skipper",
+	"name": "TumblrSkipper",
 	"version": "0.1",
-	"description": "Clicks the \"Skip\" button for you on the \"welcome\" page",
-	"icons": {"128":"HS.png"},
+	"description": "Skips the sidebar for you when you click a Tumblelog on your Dashboard",
+	"browser_action": {
+    "default_icon": "TS.png"
+  },
 	"content_scripts": [
-	{
-		"matches": ["http://www.kentucky.com/welcome_page/*"],
-		"js": ["content.js"]
-		}],
+		{
+			"matches": ["https://www.tumblr.com/dashboard"],
+			"js": ["content.js"]
+		}
+	],
 	"permissions": ["tabs"]
 }
