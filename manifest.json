@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "TumblrSkipper",
-	"version": "0.1",
+	"version": "0.2",
 	"description": "Skips the sidebar for you when you click a Tumblelog on your Dashboard",
 	"browser_action": {
     "default_icon": "TS.png",
@@ -13,5 +13,5 @@
 			"js": ["jquery.min.js", "content.js"]
 		}
 	],
-	"permissions": ["tabs", "webNavigation", "*://*/*"]
+	"permissions": ["tabs", "webNavigation", "https://www.tumblr.com/*"]
 }
